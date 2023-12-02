@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root.dark {
+    --color-primary: 46 46 46;
+    --color-secondary: 190 18 60;
+    --color-tertiary: 29 180 246;
+    --color-white: 241 241 241;
+    --color-white-transparent: 255 255 255;
+    --color-gray: 144 145 146; 
+    --color-dark: 31 31 31;
+  }
+
+  :root {
+    --color-primary: 222 222 222;
+    --color-secondary: 190 18 60;
+    --color-tertiary: 29 180 246;
+    --color-white: 70 70 70;
+    --color-gray: 144 145 146; 
+    --color-white-transparent: 0 0 0;
+    --color-dark: 242 242 242;
+  }
+  
+  :root.light {
+    --color-primary: 222 222 222;
+    --color-secondary: 190 18 60;
+    --color-tertiary: 29 180 246;
+    --color-white: 70 70 70;
+    --color-gray: 144 145 146; 
+    --color-white-transparent: 0 0 0;
+    --color-dark: 242 242 242;
+  }
+}
+
+@layer components {
+  .button {
+    @apply active:shadow-none active:translate-y-0.5 bg-[200px_0] hover:bg-[-100px_0] transition-all duration-300 bg-no-repeat bg-[linear-gradient(134deg,_transparent_30%,_rgba(255,255,255,0.6)_30%,_transparent_45%_50%)] rounded-md text-white shadow-sm;
+  }
+}
